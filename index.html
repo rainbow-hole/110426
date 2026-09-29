@@ -1,27 +1,35 @@
-<title>110426</title>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <style>
-        body {
-    margin: 0;
-    min-height: 100vh;
-    background-image: url("fundo1.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h1 {
-    font-family: 'Pinte Me Verde.otf', sans-serif;
-}
+    <title>110426</title>
 
-        
+    <style>
+        @font-face {
+    font-family: 'Pinte Me Verde';
+    src: url('Pinte%20Me%20Verde.otf') format('opentype');
+        }
+        body {
+            margin: 0;
+            min-height: 100vh;
+            background-image: url("fundo1.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+    font-family: 'Pinte Me Verde', sans-serif;
+        }
+
         .pagina {
             width: 90%;
             max-width: 700px;
@@ -51,11 +59,10 @@
 
         .hidden {
             display: none;
-            color: yellow;
+            color: yellow
         }
     </style>
 </head>
-
 <body>
 
     <main class="pagina">
@@ -67,17 +74,20 @@
         >
 
         <p class="texto">
-        Parabéns por ter chegado até aqui, talvez os próximos níveis sejam mais fáceis, ou não... de qualquer forma, boa sorte!
+            Parabéns por ter chegado até aqui, talvez os próximos níveis sejam
+            mais fáceis, ou não... de qualquer forma, boa sorte!
         </p>
 
         <audio id="musica" autoplay loop>
             <source src="Nao Tem Hora.mp3" type="audio/mpeg">
         </audio>
 
+        <span class="hidden">
+            O método mais famoso de esteganografia
+        </span>
 
-    <span class="hidden">
-       O método mais famoso de esteganografia
-        
+    </main>
+
     <script>
         const musica = document.getElementById("musica");
 
